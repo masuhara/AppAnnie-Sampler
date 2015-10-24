@@ -11,17 +11,28 @@
 		7AB0BAE51BD87D4D0066312B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB0BAE41BD87D4D0066312B /* ViewController.swift */; };
 		7AB0BAE81BD87D4D0066312B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AB0BAE61BD87D4D0066312B /* Main.storyboard */; };
 		7AB0BAEA1BD87D4D0066312B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AB0BAE91BD87D4D0066312B /* Assets.xcassets */; };
-		7AB0BAED1BD87D4D0066312B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AB0BAEB1BD87D4D0066312B /* LaunchScreen.storyboard */; };
+		7AB0BAFC1BD89E360066312B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AB0BAF91BD89E360066312B /* Default-568h@2x.png */; settings = {ASSET_TAGS = (); }; };
+		7AB0BAFD1BD89E360066312B /* Default-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AB0BAFA1BD89E360066312B /* Default-667h@2x.png */; settings = {ASSET_TAGS = (); }; };
+		7AB0BAFE1BD89E360066312B /* Default-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AB0BAFB1BD89E360066312B /* Default-736h@3x.png */; settings = {ASSET_TAGS = (); }; };
+		7AB0BB001BD8B8680066312B /* SalesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB0BAFF1BD8B8680066312B /* SalesViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		CDEAF11845A3C7A156EE9DA5 /* libPods-AppAnnieAPI-Sampler.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EE173CA5B32EF8C1676E1D4 /* libPods-AppAnnieAPI-Sampler.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2AF626842E00CE3E6DC617C2 /* Pods-AppAnnieAPI-Sampler.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppAnnieAPI-Sampler.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AppAnnieAPI-Sampler/Pods-AppAnnieAPI-Sampler.debug.xcconfig"; sourceTree = "<group>"; };
+		2EE173CA5B32EF8C1676E1D4 /* libPods-AppAnnieAPI-Sampler.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AppAnnieAPI-Sampler.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AB0BADF1BD87D4D0066312B /* AppAnnieAPI-Sampler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AppAnnieAPI-Sampler.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AB0BAE21BD87D4D0066312B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7AB0BAE41BD87D4D0066312B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7AB0BAE71BD87D4D0066312B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7AB0BAE91BD87D4D0066312B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		7AB0BAEC1BD87D4D0066312B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7AB0BAEE1BD87D4D0066312B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7AB0BAF41BD892030066312B /* AppAnnieAPI-Sampler-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppAnnieAPI-Sampler-Bridging-Header.h"; sourceTree = "<group>"; };
+		7AB0BAF91BD89E360066312B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		7AB0BAFA1BD89E360066312B /* Default-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-667h@2x.png"; sourceTree = "<group>"; };
+		7AB0BAFB1BD89E360066312B /* Default-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-736h@3x.png"; sourceTree = "<group>"; };
+		7AB0BAFF1BD8B8680066312B /* SalesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SalesViewController.swift; sourceTree = "<group>"; };
+		BACFCAA3E19D7ECCA4EAAA26 /* Pods-AppAnnieAPI-Sampler.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppAnnieAPI-Sampler.release.xcconfig"; path = "Pods/Target Support Files/Pods-AppAnnieAPI-Sampler/Pods-AppAnnieAPI-Sampler.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +40,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDEAF11845A3C7A156EE9DA5 /* libPods-AppAnnieAPI-Sampler.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6F07EDEF7878B82C310B52F5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2AF626842E00CE3E6DC617C2 /* Pods-AppAnnieAPI-Sampler.debug.xcconfig */,
+				BACFCAA3E19D7ECCA4EAAA26 /* Pods-AppAnnieAPI-Sampler.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		7AB0BAD61BD87D4D0066312B = {
 			isa = PBXGroup;
 			children = (
 				7AB0BAE11BD87D4D0066312B /* AppAnnieAPI-Sampler */,
 				7AB0BAE01BD87D4D0066312B /* Products */,
+				6F07EDEF7878B82C310B52F5 /* Pods */,
+				E5E6901B5EDA6972BD4ED2E5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +77,34 @@
 		7AB0BAE11BD87D4D0066312B /* AppAnnieAPI-Sampler */ = {
 			isa = PBXGroup;
 			children = (
+				7AB0BAF81BD89E360066312B /* Defaults */,
 				7AB0BAE21BD87D4D0066312B /* AppDelegate.swift */,
 				7AB0BAE41BD87D4D0066312B /* ViewController.swift */,
+				7AB0BAFF1BD8B8680066312B /* SalesViewController.swift */,
 				7AB0BAE61BD87D4D0066312B /* Main.storyboard */,
 				7AB0BAE91BD87D4D0066312B /* Assets.xcassets */,
-				7AB0BAEB1BD87D4D0066312B /* LaunchScreen.storyboard */,
 				7AB0BAEE1BD87D4D0066312B /* Info.plist */,
+				7AB0BAF41BD892030066312B /* AppAnnieAPI-Sampler-Bridging-Header.h */,
 			);
 			path = "AppAnnieAPI-Sampler";
+			sourceTree = "<group>";
+		};
+		7AB0BAF81BD89E360066312B /* Defaults */ = {
+			isa = PBXGroup;
+			children = (
+				7AB0BAF91BD89E360066312B /* Default-568h@2x.png */,
+				7AB0BAFA1BD89E360066312B /* Default-667h@2x.png */,
+				7AB0BAFB1BD89E360066312B /* Default-736h@3x.png */,
+			);
+			path = Defaults;
+			sourceTree = "<group>";
+		};
+		E5E6901B5EDA6972BD4ED2E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2EE173CA5B32EF8C1676E1D4 /* libPods-AppAnnieAPI-Sampler.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +114,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7AB0BAF11BD87D4D0066312B /* Build configuration list for PBXNativeTarget "AppAnnieAPI-Sampler" */;
 			buildPhases = (
+				A1EE1F495526B6698285CAC3 /* Check Pods Manifest.lock */,
 				7AB0BADB1BD87D4D0066312B /* Sources */,
 				7AB0BADC1BD87D4D0066312B /* Frameworks */,
 				7AB0BADD1BD87D4D0066312B /* Resources */,
+				478FEC33E34BE1A939050D10 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -90,6 +135,7 @@
 		7AB0BAD71BD87D4D0066312B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = masuhara;
 				TargetAttributes = {
@@ -121,13 +167,48 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7AB0BAED1BD87D4D0066312B /* LaunchScreen.storyboard in Resources */,
+				7AB0BAFC1BD89E360066312B /* Default-568h@2x.png in Resources */,
 				7AB0BAEA1BD87D4D0066312B /* Assets.xcassets in Resources */,
 				7AB0BAE81BD87D4D0066312B /* Main.storyboard in Resources */,
+				7AB0BAFD1BD89E360066312B /* Default-667h@2x.png in Resources */,
+				7AB0BAFE1BD89E360066312B /* Default-736h@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		478FEC33E34BE1A939050D10 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AppAnnieAPI-Sampler/Pods-AppAnnieAPI-Sampler-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1EE1F495526B6698285CAC3 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7AB0BADB1BD87D4D0066312B /* Sources */ = {
@@ -135,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7AB0BAE51BD87D4D0066312B /* ViewController.swift in Sources */,
+				7AB0BB001BD8B8680066312B /* SalesViewController.swift in Sources */,
 				7AB0BAE31BD87D4D0066312B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -148,14 +230,6 @@
 				7AB0BAE71BD87D4D0066312B /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		7AB0BAEB1BD87D4D0066312B /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7AB0BAEC1BD87D4D0066312B /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -244,25 +318,32 @@
 		};
 		7AB0BAF21BD87D4D0066312B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AF626842E00CE3E6DC617C2 /* Pods-AppAnnieAPI-Sampler.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "AppAnnieAPI-Sampler/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.masuhara.AppAnnieAPI-Sampler";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AppAnnieAPI-Sampler/AppAnnieAPI-Sampler-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		7AB0BAF31BD87D4D0066312B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BACFCAA3E19D7ECCA4EAAA26 /* Pods-AppAnnieAPI-Sampler.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "AppAnnieAPI-Sampler/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.masuhara.AppAnnieAPI-Sampler";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AppAnnieAPI-Sampler/AppAnnieAPI-Sampler-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -285,6 +366,7 @@
 				7AB0BAF31BD87D4D0066312B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
