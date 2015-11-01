@@ -63,7 +63,13 @@ class SalesViewController: UIViewController, UITableViewDataSource, UITableViewD
         operation.setCompletionBlockWithSuccess({ (requestOperation: AFHTTPRequestOperation!, responseObject: AnyObject!) in
             
             self.salesInfo = responseObject["sales_list"] as! [NSDictionary]
-            self.getAppName(self.salesInfo)
+            // print(self.salesInfo)
+            var appURLs = [String]()
+            for app in self.salesInfo {
+                let str = String(format:"https://api.appannie.com/v1.2/apps/ios/app/%@/details", app["product_id"] as! String)
+                appURLs.append(str)
+            }
+            self.getAppName(appURLs)
             
             }, failure: {(requestOperation: AFHTTPRequestOperation!, error: NSError!) in
                 print(error)
@@ -72,18 +78,20 @@ class SalesViewController: UIViewController, UITableViewDataSource, UITableViewD
         operation.start()
     }
     
-    // TODO: アプリ名とダウンロード数を別で取得しているため、たまにアプリ名とDL数の表示がズレるのを直す
-    func getAppName(apps: [AnyObject]) {
-        for app in apps {
-            let URL_String = String(format:"https://api.appannie.com/v1.2/apps/ios/app/%@/details", app["product_id"] as! String)
-            let rasterRequest = NSMutableURLRequest(URL: NSURL(string: URL_String)!)
+
+    func getAppName(appURLs: [String]) {
+        for URL in appURLs {
+            let rasterRequest = NSMutableURLRequest(URL: NSURL(string: URL)!)
             rasterRequest.setValue(token, forHTTPHeaderField: "Authorization")
             let operation = AFHTTPRequestOperation(request: rasterRequest)
             operation.responseSerializer = AFJSONResponseSerializer()
             operation.setCompletionBlockWithSuccess({ (requestOperation: AFHTTPRequestOperation!, responseObject: AnyObject!) in
                 
+                // print(responseObject["product"] as! NSDictionary)
                 self.appInfo.append(responseObject["product"] as! NSDictionary)
+                
                 if self.appInfo.count == self.salesInfo.count {
+                    self.sortData()
                     self.salesTable.reloadData()
                     SVProgressHUD.dismiss()
                 }
@@ -93,5 +101,21 @@ class SalesViewController: UIViewController, UITableViewDataSource, UITableViewD
             })
             operation.start()
         }
+    }
+    
+    func sortData() {
+        let descriptorForInfo: NSSortDescriptor = NSSortDescriptor(key: "product_id", ascending: true)
+        
+        let infoSeed: NSArray = self.appInfo
+        let sortedInfo = infoSeed.sortedArrayUsingDescriptors([descriptorForInfo])
+        self.appInfo = sortedInfo
+        
+        /** 
+        sales APIの方で取得できるproduct_idはなぜか文字列なのでintValueをKeyにつけてあげないと100, 20, 30...のような順になる
+         */
+        let descriptorForSales: NSSortDescriptor = NSSortDescriptor(key: "product_id.intValue", ascending: true)
+        let salesSeed: NSArray = self.salesInfo
+        let sortedSales = salesSeed.sortedArrayUsingDescriptors([descriptorForSales])
+        self.salesInfo = sortedSales
     }
 }
