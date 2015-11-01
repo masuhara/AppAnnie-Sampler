@@ -29,7 +29,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UIAlertViewDelegate
         SVProgressHUD.show()
         
         let URL_String = "https://api.appannie.com/v1.2/accounts"
-        let token = "Bearer 48c6d5c2dda1a4ea36849a744fe581256b45fc5c"
+        let token = "Bearer ここに自分のAPI Key"
         let rasterRequest = NSMutableURLRequest(URL: NSURL(string: URL_String)!)
         rasterRequest.setValue(token, forHTTPHeaderField: "Authorization")
         let operation = AFHTTPRequestOperation(request: rasterRequest)

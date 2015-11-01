@@ -10,7 +10,7 @@ import UIKit
 
 class SalesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    let token = "Bearer 48c6d5c2dda1a4ea36849a744fe581256b45fc5c"
+    let token = "Bearer 自分のAPI Key"
     var userInfo: NSDictionary!
     var appInfo = [AnyObject]()
     var salesInfo = [AnyObject]()
